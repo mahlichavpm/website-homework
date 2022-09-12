@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дюнери Фантазия</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div id="login-page">
+        <p>Моля влезте в профила си за да продължите:</p>
+        <form id="login-form">
+            <input required type="email" name="username" placeholder="Email">
+            <input required type="password" name="password" placeholder="Парола">
+            <p class="error" id="login-error">Грешни входни данни!</p>
+            <button type="submit">Вход</button>
+            <button type="button"><a href="#register">Регистрация</a></button>
+        </form>
+    </div>
+
+    <div id="register-page">
+        <form id="registerForm">
+            <input required type="email" id="regUsername" name="username" placeholder="Email">
+            <input type="text" name="name" placeholder="Име и Фамилия">
+            <input required type="password" id="password" name="password" placeholder="Парола">
+            <input required type="password" name="confirmPass" id="confirmPassword" placeholder="Потвърдете паролата си">
+            <p id="passError">Паролите не съвпадат!</p>
+            <p id="userExistsError">Този email вече е регистриран!</p>
+            <button type="submit" id="registerBtn">Регистрация</button>
+            <button type="button"><a href="#login">Вход</a></button>
+        </form>
+    </div>
+
+    <header id="header">
+        <img id="logo" src="./assets/img/logo.jpeg" alt="logo">
+        <a id="main-link" href="#main-page">МЕНЮ</a>
+        <a href="#cart">
+            <img id="cart-img" src="./assets/img/cart.jpeg" alt="cart-icon">
+        </a>
+        <div id="items-in-cart"></div>
+    </header>
+    <main>
+        <div id="main-page">
+            <input type="text" placeholder="Потърси продукт">
+            <div id="doner-container">
+
+            </div>
+        </div>
+        <div id="cart">
+            <div id="error">Нямате продукти в количката.</div>
+            <div id="cart-container">
+                <ol id="items-list">
+
+                </ol>
+                <span id="bill"></span>
+                <button>
+                    <a href="#order-details">
+                        Поръчка
+                    </a>
+                </button>
+            </div>
+        </div>
+        <div id="order-details">
+            <form id="order-form">
+                <input type="text" placeholder="Две имена">
+                <input type="text" placeholder="Телефонен номер">
+                <textarea placeholder="Адрес" cols="30" rows="3"></textarea>
+                <button>
+                    <a href="#main-page">Финализирай</a>
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <script src="./assets/js/models/User.js"></script>
+    <script src="./assets/js/models/UserManager.js"></script>
+    <script src="./assets/js/contorllers/registerController.js"></script>
+    <script src="./assets/js/contorllers/loginController.js"></script>
+    <script src="./assets/data/data.js"></script>
+    <script src="./assets/js/models/Doner.js"></script>
+    <script src="./assets/js/models/Cart.js"></script>
+    <script src="./assets/js/models/DonerManager.js"></script>
+    <script src="./assets/js/contorllers/index.js"></script>
+</body>
+
+</html>

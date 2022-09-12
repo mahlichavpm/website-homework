@@ -1,0 +1,139 @@
+body {
+    background-color: bisque;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background-color:#d4a61a;
+}
+
+#login-page {
+    top: 200px;
+    position: relative;
+    left: 500px;
+    width: 400px;
+}
+
+#register-page{
+    position: relative;
+    top: 200px;
+    width: 300px;
+    left: 400px;
+}
+
+#registerForm,
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#logo {
+    width: 80px;
+}
+
+#cart-img {
+    width: 50px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+#main-link {
+    height: 24px;
+    text-decoration: none;
+    color:black;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+#main-link:hover {
+    color: azure;
+}
+
+.card-container{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: center;
+    margin: 10px;
+}
+
+.card-container > img {
+    width: 200px;
+}
+
+.card-container > button {
+    border-radius: 5px;
+    background-color: #d4a61a;
+}
+
+.card-container > input {
+    border-radius: 5px;
+    width: 120px;
+}
+
+.card-container > button:hover {
+    background-color: antiquewhite;
+}
+
+#doner-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#items-in-cart {
+    position: absolute;
+    background: red;
+    width: 20px;
+    border-radius: 50%;
+    right: 29px;
+    color: white;
+    font-size: 14px;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+#error {
+    font-size: 46px;
+    padding: 215px;
+}
+
+li {
+    margin: 5px;
+    font-size: 16px;
+}
+
+li > span {
+    margin: 0px 12px;
+}
+
+#cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cart-container > button {
+    width: 250px;
+    font-size: 24px;
+    border-radius: 5px;
+    background-color: #d4a61a;
+}
+
+#cart-container > button > a {
+    text-decoration: none;
+    color: black;
+}
+
+#cart-container > button:hover {
+    background-color: antiquewhite;
+}
+
+
+#bill {
+    font-size: 40px;
+}
